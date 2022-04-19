@@ -12,6 +12,7 @@
 
 
     <h3>Opdracht 1</h3>
+    <!-- Write a function to check whether a number is prime or not. -->
 
     <?php
 
@@ -38,8 +39,8 @@
 
     ?>
 
-
 <h3>Opdracht 2</h3>
+<!-- Write a function to reverse a string. -->
 
 <?php
 
@@ -55,24 +56,46 @@ reverseString("This is a string");
 ?>
 
 <h3>Opdracht 3</h3>
+<!-- Write a PHP function that checks whether a string is all lowercase. -->
 
 <?php
 
+// function checkLowerCase($string) {
+//     $array = (explode(" ", $string));
+//     $n = count($array);
+//     for($i = 0; $i < $n; $i++) {
+//         if (ctype_lower($array[$i])) {
+//             echo "Yes\n";
+//         } else {
+//             echo "No\n";
+//         }
+//     }
+// }
+
+
+// function checkLowerCase($string){
+//     if (ctype_lower($string)) {
+//         echo "'$string' consists of all lowercase letters.", '<br>' ;
+//     } else {
+//         echo "'$string' does not consist of all lowercase letters.", '<br>';
+//     }
+// }
+
 function checkLowerCase($string){
-    if (ctype_lower($string)) {
+    if ($string === strtolower($string)) {
         echo "'$string' consists of all lowercase letters.", '<br>' ;
     } else {
         echo "'$string' does not consist of all lowercase letters.", '<br>';
     }
 }
-      
+
 checkLowerCase('uw warmtewisselaar lekt aan de bovenkant');
 checkLowerCase('U Kunt Bij Ons Een Offerte Voor Een Niewe Ketel Aanvragen');
 
 ?>
 
 <h3>Opdracht 4</h3>
-
+<!-- Write a function to sort an array.  -->
 <?php
 
 $person = [
@@ -94,6 +117,10 @@ sortArray($person);
 ?>
 
 <h3>Opdracht 5</h3>
+<!-- Write a PHP function that checks whether a person is eligible to vote. -->
+<!-- Condition
+Je moet een parameter naam en leeftijd kunnen als parameter kunnen passen aan je function.
+Je moet dynamisch kunnen outputten met echo of de persoon oud genoeg is om te stemmen. -->
 
 <?php
 

@@ -11,6 +11,9 @@ the " . $color[2] . " carpet, the " . $color[1] . " lawn, the " . $color[0] . " 
 ?>
 
 <h3>Opdracht 2</h3>
+<!-- Write a script which will display the following string
+"The memory of that scene for me is like a frame of film forever frozen at that moment: the red carpet, the green lawn, the white house, the leaden sky. The new president and his first lady. - Richard M. Nixon"
+and the words 'red', 'green' and 'white' will come from $color. -->
 
 <?php
 
@@ -24,6 +27,8 @@ for($i = 0; $i < $n; $i++) {
 ?>
 
 <h3>Opdracht 3</h3>
+<!-- Create a PHP script which displays the capital and country name from the above array $ceu. 
+Sort the list by the capital of the country. -->
 
 <?php
 
@@ -38,6 +43,7 @@ foreach ($ceu as $country => $capital){
 ?>
 
 <h3>Opdracht 4</h3>
+<!-- Write a PHP script to calculate and display average temperature, five lowest and highest temperatures -->
 
 <?php
 
@@ -49,29 +55,32 @@ for($i=0; $i<=$n; $i++) {
     $sum = $sum+ ($recordedTemp[$i]);
 }
 
-echo "Average Temperature is :", ($sum / $n), '<br>'; // Average Temperature is : 70.6 
+echo "Average Temperature is : ", round( ($sum / $n), 1) , '<br>'; // Average Temperature is : 70.6 
 
 // List of five lowest temperatures : 60, 62, 63, 63, 64, 
 sort($recordedTemp);
 echo "List of five lowest temperatures: ";
-    for($i = 0; $i < 5; $i++) {
+    for($i = 0; $i < 4; $i++) {
     echo $recordedTemp[$i];
     echo ", ";
   }
+  echo $recordedTemp[5];
  echo '<br>';
 
 // List of five highest temperatures : 76, 78, 79, 81, 85,
 rsort($recordedTemp);
-echo "List of five lowest temperatures: ";
-    for($i = 0; $i < 5; $i++) {
+echo "List of five highst temperatures: ";
+for($i = 0; $i < 4; $i++) {
     echo $recordedTemp[$i];
     echo ", ";
   }
-  echo '<br>';
+  echo $recordedTemp[5];
+ echo '<br>';
 
 ?>
 
 <h3>Opdracht 5</h3>
+<!-- Write a PHP script that displays the highest temperature that day and which city this was in. -->
 
 <?php
 
@@ -106,8 +115,4 @@ foreach($weeklyTemps as $weekDay => $cityTemp) {
         echo "De hoogste temperatuur op " . $weekDay . ", was " . $temp . " in ". $city . ".";
         echo "<br>";
     }
-
-
-
-
 ?>

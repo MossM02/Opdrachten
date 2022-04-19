@@ -9,6 +9,8 @@
 <body>
     
 <h2>Opdracht 1</h2>
+<!-- Create a script that displays 1-2-3-4-5-6-7-8-9-10 on one line. 
+There will be no hyphen(-) at starting and ending position.  -->
 <?php
 
 for ($i=0; $i<=9; $i++) {
@@ -18,6 +20,8 @@ echo "10"
 ?>
 
 <h2>Opdracht 2</h2>
+<!-- Create a script using a for loop to add all the integers between 0 and 30 and display the total.  -->
+
 <?php
 
 
@@ -29,6 +33,12 @@ echo $sum;
 
 
 <h2>Opdracht 3</h2>
+<!-- Create a script to construct the following pattern, using nested for loop. 
+*  
+* *  
+* * *  
+* * * *  
+* * * * *   -->
 <?php
 
 for ($i=0; $i<5; $i++) {
@@ -40,6 +50,18 @@ for ($i=0; $i<5; $i++) {
 ?>
 
 <h2>Opdracht 4</h2>
+<!-- Create a script to construct the following pattern, using a nested for loop.
+*
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*  -->
+
 <?php
 
 for ($i=0; $i<5; $i++) {
@@ -57,6 +79,9 @@ for ($i=0; $i<=5; $i++) {
 ?>
 
 <h2>Opdracht 5</h2>
+<!-- Write a PHP script using nested for loop that creates a chess board as shown below. 
+Use table width="270px" and take 30px as cell height and width. -->
+
 <table style ="border: 1px solid black; width:270px">
 
 <?php
