@@ -39,6 +39,56 @@
 
     ?>
 
+<h3>Prime number between 1 to 100</h3>
+<table style ="border: 1px solid black">
+
+<?php
+// for ($i = 1; $i <= 10; $i++){
+//     echo $i;
+// } 
+
+// for ($i = 0; $i <= 10; $i++){
+//     for ($j=0; $j<10; $j++){
+    // ($i*10) + $j +1;
+//     }
+//     echo '<br>';
+// } 
+
+
+for ($i = 0; $i < 10; $i++){
+    echo '<tr>';
+    for ($j=0; $j<10; $j++){
+        echo '<td style="width: 20px; height: 20px ; border: 1px solid black">';
+        ($i*10) + $j +1;
+        '</td>';
+    }
+    echo "<br>";
+    echo '</tr>';
+} 
+
+// for ($i=0; $i<4; $i++) {
+//     echo '<tr>';
+//     for ($j=0; $j<4; $j++) {
+//         echo '<td style="width: 30px; height: 30px"></td>
+//         <td style="width: 30px; height: 30px; background-color:black"></td>';
+//     } 
+//     echo "<br>";
+//     echo '</tr>';
+
+//     echo '<tr>';
+//     for ($j=0; $j<4; $j++) {
+//         echo '<td style="width: 30px; height: 30px; background-color:black"></td>
+//         <td style="width: 30px; height: 30px"></td>';
+//     } 
+//     echo "<br>";
+//     echo '</tr>';
+// } 
+
+
+
+    ?>
+    </table>
+
 <h3>Opdracht 2</h3>
 <!-- Write a function to reverse a string. -->
 

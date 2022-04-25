@@ -84,8 +84,6 @@ for($i = 0; $i < 4; $i++) {
 
 <?php
 
-//De hoogste temperatuur op Weekdag was Temp in City.
-
 $weeklyTemps = [
     "Maandag" => [ 
     	"Groningen" => 25,
