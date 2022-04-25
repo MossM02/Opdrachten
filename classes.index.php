@@ -14,6 +14,8 @@
 
 <?php
 
+use JetBrains\PhpStorm\NoReturn;
+
 class Simple {
 
     public function message (){
@@ -46,7 +48,6 @@ echo $object1 -> introMessage ('Scott');
 ?>
 
 
-
 <h3>Opdracht 3</h3>
 <!-- Write a PHP calculator class which will accept two values as arguments, 
 then add them, subtract them, multiply them together, or divide them on request.
@@ -63,34 +64,34 @@ class MyCalculator {
 
     public $num1;
     Public $num2;
-    // public function __construct($num1, $num2)
-    // {
-    //     $this-> number = $num1;
-    //     $this-> number = $num2;
-    // } 
+    public function __construct($num1, $num2)
+    {
+        $this->num1 = $num1;
+        $this->num2 = $num2;
+    } 
 
-    public function add($num1, $num2){
-       echo  $num1 + $num2;
+    public function add(){
+       return  $this->num1 + $this->num2;
     }
 
-    public function subtract($num1, $num2){
-        echo  $num1 - $num2;
+    public function subtract(){
+        return  $this->num1 - $this->num2;
     }
 
-    public function multiply ($num1, $num2){
-        echo  $num1 * $num2;
+    public function multiply (){
+        return  $this->num1 * $this->num2;
     }
 
-    public function divide($num1, $num2){
-        echo  $num1 / $num2;
+    public function divide(){
+        return  $this->num1 / $this->num2;
     }
 }
 
 
 $mycalc = new MyCalculator( 12, 6);
-echo $mycalc-> add(12, 6); // Displays 18
+echo $mycalc-> add(); // Displays 18
 echo "<br>";
-echo $mycalc-> multiply(12, 6); // Displays 72
+echo $mycalc-> multiply(); // Displays 72
 echo "<br>";
 ?>
 
