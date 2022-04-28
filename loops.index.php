@@ -24,7 +24,6 @@ echo "10"
 
 <?php
 
-
 for($i=0; $i<=29; $i++) {
     $sum = $sum+ $i;
 }

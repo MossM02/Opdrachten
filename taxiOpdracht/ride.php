@@ -1,16 +1,9 @@
 
 <?php
 
-class rides {
+class Ride {
 
-    public $ritten = [
-        'Bennett' => 15,
-        'Rovelli' => 27,
-        'Mendel' => 43
-    ];
-
-
-    public $distance = [];
+    public $distance;
     Public $minutes;
 
     public function __construct($distance, $minutes)
@@ -42,30 +35,19 @@ class rides {
         // Used startTime as a callback function within calculatePrice
     public function calcuatePrice(){
         $x = $this -> distance * 0.5;
-        echo $x . "<br>";
+        echo "The distance of my ride (km) is: " . $x *2 . "<br>";
         $y = $this -> minutes *0.17;
-        echo $y . "<br>";
+        // echo $y . "<br>";
         if ("startTime" === true) {
             $toeslag = $this -> distance * 1.15;
-            echo $toeslag . "<br>";
+            // echo $toeslag . "<br>";
             return $x + $y + $toeslag;
         } else 
         echo "The price of my ride is $" . $x + $y. "<br>";
-    
-        // pushing a new item onto the array of ritten?
-        array_push($this ->ritten, $x + $y ); 
-        print_r($this ->ritten);
-
 
     }
 }
 
-
-$ride = new rides(20, 15);
-echo $ride-> startTime(); 
-echo "<br>";
-echo $ride-> calcuatePrice(); 
-echo "<br>";
 
 ?>
 
