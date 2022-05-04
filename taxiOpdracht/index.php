@@ -36,14 +36,20 @@
         <!-- YOUR APP GOES HERE -->
         <div class="container">
             <p class="text heading">App Output Here:</p>
+
+            <!-- <form class="text paragraph" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                Starttime: <input input type="time" name="fname">
+                <input type="submit">
+            </form> -->
+
             <p class="text paragraph">
                 <?php
                 // ALL THE CLASSES WITH THEIR BEHAVIOR GO IN HERE.
-                require 'taxi.php';
-                require 'ride.php';
-                require 'administratie.php';
+                require 'models/Taxi.php';
+                require 'models/Ride.php';
+                require 'models/Administratie.php';
                 // YOUR APP IS RUN FROM A MAIN FILE.
-                require 'controller.php'
+                require 'controllers/App.php'
                 ?>
             </p>
         </div>
